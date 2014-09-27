@@ -40,16 +40,16 @@ def calKernel (xi , x , kernelOption) :
 	for each x_j in x : calculate the K(x_i , x_j)
 	"""
 	n , m = shape (x)
-	kernel = mat (zeros ((1 , n)))
+	kernel = mat (zeros ((n , 1)))
 	if kernelOption[0] == 'linear' :
 		# print xi , x
 		kernel = x * xi.T
 	elif kernelOption[0] == 'rbf' : 
 		sigma = kernelOption[1]
-		for i in range (m) :
+		for i in range (n) :
 			# K(x , y) = exp (\frac {-||x - y|| ^ 2}{\sigma ^ 2})
 			diff = xi - x[i , :]
-			kernel[i] = exp (-1.0 * (diff * diff.T) / (2 * simga ** 2))
+			kernel[i] = exp (-1.0 * (diff * diff.T) / (2 * sigma ** 2))
 	else :
 		print 'error : no such kernelOption'
 	return kernel

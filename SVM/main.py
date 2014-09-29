@@ -17,7 +17,7 @@ train_y = labels[0:80, :]
 test_x = feature[80:100, :]  
 test_y = labels[80:100, :]  
 # training
-svm = trainSVM (train_x , train_y , 0.6 , 0.001 , 100 , ['rbf' , 1.0])
+svm = trainSVM (train_x , train_y , 0.6 , 0.001 , 100 , ['linear' , 1.0])
 
 # print the SVM
 showSVM (svm)

@@ -8,3 +8,4 @@
 4.  logistic regression , Logistic回归 (2014-09-18) 从疝气病症预测病马的死亡率。
 5.  SVM,  libsvm 上找的数据(a1a进行测试)  2014-09-25
 6.  AdaBoost (2014-10-08) 从疝气病症预测病马的死亡率
+7.  Regression (2014-10-10) linear regression , lwlr , ridge regression ,forward stepwire regression 

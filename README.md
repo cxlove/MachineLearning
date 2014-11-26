@@ -9,3 +9,6 @@
 5.  SVM,  libsvm 上找的数据(a1a进行测试)  2014-09-25
 6.  AdaBoost (2014-10-08) 从疝气病症预测病马的死亡率
 7.  Regression (2014-10-10) linear regression , lwlr , ridge regression ,forward stepwire regression 
+8.  PCA 降维，主成成分分析
+9.  SVD 奇异分解，推荐系统 
+10.  Apriori关联挖掘
